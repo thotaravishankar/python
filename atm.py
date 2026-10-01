@@ -1,4 +1,5 @@
 #ATM Application
+import datetime
 print("============================================ATM===================================================================")
 amount = 100000
 exit = "1"
@@ -29,6 +30,7 @@ if card == "c":
                     print("Insufficient amount\n")
                 else:
                     print("==========================================================================================\n")
+                    print("Date:", datetime.datetime.now())
                     print("Account Holder: Ravi")
                     print(f"Money Withdrawed: {withdraw}")
                     amount-=withdraw
